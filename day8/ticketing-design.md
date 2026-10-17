@@ -557,3 +557,4 @@ TicketHub must support 50,000 normal daily visitors and a popular sale where 200
 The design combines a waiting room, horizontally scaled application servers, caching, PostgreSQL, a read replica, a payment provider, and background workers.
 
 Most importantly, seat ownership is controlled by atomic conditional updates and database transactions rather than by the browser or cache. This prevents double-booking under concurrent requests while the waiting room and scalable architecture help maintain performance and fairness during high demand.
+
